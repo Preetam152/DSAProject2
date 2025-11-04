@@ -1,0 +1,74 @@
+=== RUN2: Problem 1 - Dijkstra’s Shortest Path ===
+
+Directed Graph Shortest Paths:
+V1: cost = 0, path = ['V1']
+V2: cost = 5, path = ['V1', 'V2']
+V3: cost = 3, path = ['V1', 'V3']
+V4: cost = 5, path = ['V1', 'V3', 'V4']
+V5: cost = 8, path = ['V1', 'V3', 'V4', 'V5']
+V6: cost = 11, path = ['V1', 'V2', 'V6']
+V7: cost = 7, path = ['V1', 'V3', 'V7']
+V8: cost = 10, path = ['V1', 'V3', 'V7', 'V8']
+V9: cost = 12, path = ['V1', 'V3', 'V7', 'V8', 'V9']
+V10: cost = 16, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10']
+V11: cost = 21, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10', 'V11']
+V12: cost = 24, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12']
+V13: cost = 26, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13']
+V14: cost = 29, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+V15: cost = 31, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15']
+V16: cost = 35, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16']
+V17: cost = 37, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17']
+V18: cost = 40, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18']
+V19: cost = 44, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19']
+V20: cost = 49, path = ['V1', 'V3', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20']
+
+Undirected Graph Shortest Paths:
+V1: cost = 0, path = ['V1']
+V2: cost = 3, path = ['V1', 'V2']
+V3: cost = 7, path = ['V1', 'V2', 'V3']
+V4: cost = 10, path = ['V1', 'V5', 'V4']
+V5: cost = 4, path = ['V1', 'V5']
+V6: cost = 6, path = ['V1', 'V2', 'V6']
+V7: cost = 10, path = ['V1', 'V2', 'V6', 'V7']
+V8: cost = 14, path = ['V1', 'V5', 'V4', 'V8']
+V9: cost = 9, path = ['V1', 'V5', 'V9']
+V10: cost = 5, path = ['V1', 'V10']
+V11: cost = 9, path = ['V1', 'V10', 'V11']
+V12: cost = 12, path = ['V1', 'V10', 'V11', 'V12']
+V13: cost = 12, path = ['V1', 'V10', 'V14', 'V13']
+V14: cost = 9, path = ['V1', 'V10', 'V14']
+V15: cost = 8, path = ['V1', 'V5', 'V15']
+V16: cost = 11, path = ['V1', 'V5', 'V15', 'V16']
+V17: cost = 13, path = ['V1', 'V5', 'V15', 'V16', 'V17']
+V18: cost = 13, path = ['V1', 'V10', 'V14', 'V18']
+V19: cost = 11, path = ['V1', 'V5', 'V15', 'V19']
+V20: cost = 14, path = ['V1', 'V5', 'V15', 'V19', 'V20']
+V21: cost = 18, path = ['V1', 'V5', 'V15', 'V16', 'V17', 'V21']
+
+=== RUN2: Problem 2 - Minimum Spanning Tree (Kruskal) ===
+Edge: V16 - V17 | Weight: 2
+Edge: V1 - V2 | Weight: 3
+Edge: V5 - V6 | Weight: 3
+Edge: V11 - V12 | Weight: 3
+Edge: V13 - V14 | Weight: 3
+Edge: V15 - V16 | Weight: 3
+Edge: V19 - V20 | Weight: 3
+Edge: V2 - V6 | Weight: 3
+Edge: V7 - V11 | Weight: 3
+Edge: V11 - V15 | Weight: 3
+Edge: V15 - V19 | Weight: 3
+Edge: V9 - V19 | Weight: 3
+Edge: V2 - V3 | Weight: 4
+Edge: V6 - V7 | Weight: 4
+Edge: V10 - V11 | Weight: 4
+Edge: V14 - V15 | Weight: 4
+Edge: V17 - V18 | Weight: 4
+Edge: V20 - V21 | Weight: 4
+Edge: V4 - V8 | Weight: 4
+Edge: V3 - V4 | Weight: 5
+Total Cost of MST: 68
+
+=== RUN2: Problem 3 - DFS, Topological Sort & Cycles ===
+Graph is Acyclic.
+Topological Order:
+V1 -> V3 -> V7 -> V8 -> V9 -> V10 -> V11 -> V12 -> V13 -> V14 -> V15 -> V16 -> V17 -> V18 -> V19 -> V20 -> V2 -> V4 -> V5 -> V6
